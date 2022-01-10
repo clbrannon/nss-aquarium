@@ -1,10 +1,25 @@
-.interest {
-    border: 1px dotted crimson;
-    padding: 1em;
-    margin: 0.5em;
+header.page-header {
+
+    text-align: center;
 
 }
-.bio__interests {
+
+.bigDiv {
+
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+
 }
+
+.myDiv {
+
+    border: 5px outset red;
+    margin: 5px;
+    background-color: lightblue;    
+    display: flex;
+    flex-direction: row;
+
+    width: 25%;
+
+  }
