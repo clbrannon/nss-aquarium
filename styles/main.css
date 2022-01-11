@@ -4,22 +4,74 @@ header.page-header {
 
 }
 
-.bigDiv {
+.allFish {
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+ 
 }
 
-.myDiv {
+.card {
 
     border: 5px outset red;
     margin: 5px;
-    background-color: lightblue;    
+    background-color: lightblue;
+    width: 400px;
+    height: 200px;
+
+}
+
+.infoDiv {
+
+display: flex;
+height: 75%;
+
+}
+
+.image {  
+
+    height: 90%;
+
+}
+
+.image:hover {
+
+    animation-name: move;
+    animation-duration: 5s;
+    position: relative;
+
+}
+
+@keyframes move {
+
+0% {right:0px;}
+25% {right:60px}
+50% {left:60px; -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
+75% {right: 0px; -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
+
+}
+
+.info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+    margin: 0px;
+    margin-top: 1em;
 
-    width: 25%;
+}
 
-  }
+.item {
+
+    margin: 0px;
+
+}
+
+.diet {
+
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 2em;
+
+}
